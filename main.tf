@@ -16,11 +16,6 @@ resource "google_container_cluster" "primary" {
     "us-central1-c",
   ]
 
-  master_auth {
-    username = "flugelAdmin"
-    password = "444a4376f135329ed0abf2677915ba57e5d05f76"
-  }
-
   node_config {
     oauth_scopes = [
       "https://www.googleapis.com/auth/compute",
