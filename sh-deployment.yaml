@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sh-deployment
+  labels:
+    app: sh-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: sh-deployment
+    spec:
+      containers:
+        - name: sh-deployment
+          image: rafaelhdr/server-hello
+          ports:
+            - containerPort: 5000
