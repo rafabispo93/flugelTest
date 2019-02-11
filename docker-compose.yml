@@ -1,12 +1,10 @@
-version: '3.5'
+version: '3.0'
 services:
   app:
     restart: always
-    build: .
+    image: rafaelbsp93/flugeltest_app
     ports:
       - 5000:5000
-    volumes:
-      - .:/app
     command: bash -c "python3 /app/run.py"
 
 volumes:
