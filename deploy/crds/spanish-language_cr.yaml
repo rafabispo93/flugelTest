@@ -1,0 +1,7 @@
+apiVersion: languages.flugel.com/v1
+kind: Language
+metadata:
+  name: spanish-language
+spec:
+  image: rafaelbsp93/language_spanish
+  size: 3060

@@ -21,3 +21,13 @@
         1. terraform init
         2. terraform plan
         3. terradorm apply
+
+# Commands to run language operator
+
+    - Operator created usin Operator-SDK
+    - Run the commands below:
+        1. kubectl create -f deploy/service_account.yaml
+        2. kubectl create -f deploy/role.yaml
+        3. kubectl create -f deploy/role_binding.yaml
+        4. kubectl create -f deploy/operator.yaml
+
