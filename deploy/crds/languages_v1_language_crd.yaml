@@ -1,0 +1,33 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  creationTimestamp: null
+  name: languages.languages.flugel.com
+spec:
+  group: languages.flugel.com
+  names:
+    kind: Language
+    listKind: LanguageList
+    plural: languages
+    singular: language
+  scope: Namespaced
+  subresources:
+    status: {}
+  validation:
+    openAPIV3Schema:
+      properties:
+        apiVersion:
+          type: string
+        kind:
+          type: string
+        metadata:
+          type: object
+        spec:
+          type: object
+        status:
+          type: object
+  version: v1
+  versions:
+  - name: v1
+    served: true
+    storage: true

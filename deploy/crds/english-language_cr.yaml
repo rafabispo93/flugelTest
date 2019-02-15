@@ -1,0 +1,7 @@
+apiVersion: languages.flugel.com/v1
+kind: Language
+metadata:
+  name: english-language
+spec:
+  image: rafaelhdr/server-hello
+  size: 3060
